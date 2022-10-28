@@ -2,7 +2,8 @@ import axios from 'axios'
 
 /* 'http://127.0.0.1:8090/' */
 const instance = axios.create({
-	proxy: 'http://10.1.2.6:8090/',
+	baseURL:  '${{ secrets.WAS_URL }}'
+	//proxy: 'http://10.1.2.6:8090/',
 })
 
 instance.defaults.headers.post['Content-Type'] =
