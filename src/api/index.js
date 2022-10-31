@@ -2,8 +2,7 @@ import axios from 'axios'
 
 /* 'http://127.0.0.1:8090/' */
 const instance = axios.create({
-	baseURL: 'https://waskm.azurewebsites.net:8090',
-	//proxy: 'http://10.1.2.6:8090/',
+	proxy: 'https://kmwas2.azurewebsites.net/',
 })
 
 instance.defaults.headers.post['Content-Type'] =
