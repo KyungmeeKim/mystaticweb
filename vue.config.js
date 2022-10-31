@@ -9,7 +9,7 @@ module.exports = {
 	devServer: {
 		overlay: false,
 		// public: '0.0.0.0:8080',
-		proxy: 'https://kmwas2.azurewebsites.net/'
+		proxy: 'https://kmwas2.azurewebsites.net'
 	},
 
 }
