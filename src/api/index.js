@@ -14,7 +14,7 @@ instance.defaults.headers.post['Access-Control-Allow-Origin'] = '*'
  * @param {*} params
  */
 function getBoardListAPI(params) {
-	return instance.get('/board/list', params)
+	return instance.get('/api/board/list', params)
 }
 
 /**
@@ -22,7 +22,7 @@ function getBoardListAPI(params) {
  * @param {*} params
  */
 function getBoardDetailAPI(params) {
-	return instance.get('/board/detail', params)
+	return instance.get('/api/board/detail', params)
 }
 
 /**
@@ -30,7 +30,7 @@ function getBoardDetailAPI(params) {
  * @param {*} params
  */
 function insertBoardAPI(params) {
-	return instance.post('/board/insert', null, params)
+	return instance.post('/api/board/insert', null, params)
 }
 
 /**
@@ -38,7 +38,7 @@ function insertBoardAPI(params) {
  * @param {*} params
  */
 function updateBoardAPI(params) {
-	return instance.post('/board/update', null, params)
+	return instance.post('/api/board/update', null, params)
 }
 
 /**
@@ -46,7 +46,7 @@ function updateBoardAPI(params) {
  * @param {*} params
  */
 function deleteBoardAPI(params) {
-	return instance.post('/board/delete', null, params)
+	return instance.post('/api/board/delete', null, params)
 }
 
 /**
@@ -54,7 +54,7 @@ function deleteBoardAPI(params) {
  * @param {*} params
  */
 function insertReplyAPI(params) {
-	return instance.post('/board/reply/insert', null, params)
+	return instance.post('/api/board/reply/insert', null, params)
 }
 
 /**
@@ -62,7 +62,7 @@ function insertReplyAPI(params) {
  * @param {*} params
  */
 function getReplyListAPI(params) {
-	return instance.get('/board/reply/list', params)
+	return instance.get('/api/board/reply/list', params)
 }
 
 /**
@@ -70,7 +70,7 @@ function getReplyListAPI(params) {
  * @param {*} params
  */
 function updateReplyAPI(params) {
-	return instance.post('/board/reply/update', null, params)
+	return instance.post('/api/board/reply/update', null, params)
 }
 
 /**
@@ -78,7 +78,7 @@ function updateReplyAPI(params) {
  * @param {*} params
  */
 function deleteReplyAPI(params) {
-	return instance.post('/board/reply/delete', null, params)
+	return instance.post('/api/board/reply/delete', null, params)
 }
 
 export {
